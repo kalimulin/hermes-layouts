@@ -1,0 +1,39 @@
+@import "../../../../browser/styles/variables";
+
+#modal-footer-common {
+  border-top: 0;
+  .btn {
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    background-color: $silver;
+    border-color: $silver;
+    width: 230px;
+    &.confirm {
+      background-color: $light-green;
+      border-color: $light-green;
+      color: $template-text-discount;
+      &[disabled] {
+        background-color: $silver;
+        border-color: $silver;
+      }
+    }
+  }
+}
+
+@media (max-width: 749px) {
+  #modal-footer-common {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-footer-common {
+    .btn {
+      font-size: 13px;
+    }
+  }
+}

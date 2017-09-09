@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.opening-hours-component {
+  font-size: 9px;
+  padding: 3px 5px;
+  margin-bottom: 16px;
+  .title {
+    font-weight: bold;
+  }
+  .fa {
+    color: $light-green;
+    margin-right: 3px;
+  }
+}

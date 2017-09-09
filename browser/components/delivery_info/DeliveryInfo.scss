@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.delivery-info-component {
+  margin-bottom: 21px;
+  padding: 0 9px;
+  h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: $roboto;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: condensed;
+  }
+  p {
+    font-family: $open-sans;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    &.worktimes {
+      color: #6ab922;
+    }
+  }
+  .fa {
+    color: inherit;
+    margin-right: 5px;
+  }
+  .paysystem-images {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 195px;
+    padding: 0;
+    img {
+      mix-blend-mode: luminosity;
+      height: 10px;
+      margin-right: 5px;
+    }
+  }
+}

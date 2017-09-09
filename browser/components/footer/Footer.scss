@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+#footer {
+  background-color: #595968;
+  color: $template-text-discount;
+  padding-top: 12px;
+  padding-bottom: 36px;
+  a {
+    color: $template-text-discount;
+  }
+  .title {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    margin-bottom: 21px;
+    font-family: $roboto;
+  }
+  .nav {
+    li {
+      a {
+        padding: 0;
+        transition: 400ms;
+        &:focus,
+        &:hover {
+          background-color: inherit;
+          color: #adcf00;
+        }
+      }
+    }
+  }
+  .mobile-app {
+    margin-bottom: 10px;
+    img {
+      max-width: 158px;
+      max-height: 50px;
+    }
+  }
+}

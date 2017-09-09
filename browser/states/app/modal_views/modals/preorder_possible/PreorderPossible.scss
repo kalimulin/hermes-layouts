@@ -1,0 +1,28 @@
+@import "../../../../../styles/variables";
+
+#preorder-possible-modal-state {
+  text-align: center;
+  h1 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-align: center;
+    color: #e33f29;
+    margin-top: 27px;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    margin: 29px auto 42px;
+  }
+  .btn {
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: $steel;
+    margin-bottom: 20px;
+  }
+}

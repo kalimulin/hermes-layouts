@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+
+#home-state {
+  .heading {
+    background-color: #595968;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    padding: 11px;
+  }
+  .heading-blue {
+    display: flex;
+    align-items: center;
+    background-color: $tealish-two;
+    padding: 11px;
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-align: left;
+    color: $template-text-discount;
+    .fa,
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .mobile-home-state {
+    padding: 0;
+  }
+}

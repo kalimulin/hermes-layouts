@@ -1,0 +1,212 @@
+@import "../../styles/variables";
+
+#basket-component {
+  .heading {
+    background-color: #595968;
+    color: $template-text-discount;
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    padding: 11px;
+    .fa {
+      margin-right: 10px;
+    }
+  }
+  .order-for-delivery {
+    padding: 10px 11px;
+    background-color: $silver;
+    font-family: $roboto;
+    font-size: 18px;
+    font-stretch: condensed;
+    text-align: left;
+    color: #595968;
+    margin: 0;
+    .dropdown-menu {
+      width: 100%;
+    }
+  }
+  .order-checkout {
+    padding-top: 10px;
+    hr {
+      border-top: solid 1px $warm-grey;
+      opacity: 0.6;
+      border-bottom: 0;
+      margin: 7px;
+    }
+    table {
+      margin-top: 1px;
+      margin-bottom: 0;
+      tbody {
+        tr {
+          td {
+            border-top: 0;
+            padding-top: 0;
+            &:first-child {
+              padding-left: 11px;
+            }
+            &:last-child {
+              padding-right: 11px;
+            }
+          }
+          td.item-cost {
+            text-align: right;
+            white-space: nowrap;
+            .count {
+              font-size: 18px;
+              color: #646464;
+              font-weight: bold;
+              .fa {
+                cursor: pointer;
+              }
+              .fa-minus-circle {
+                margin: 0 10px 0 0;
+              }
+              .fa-plus-circle {
+                margin: 0 0 0 10px;
+              }
+            }
+            .basic-price {
+              text-indent: 20px;
+              font-family: $open-sans;
+              font-size: 12px;
+              color: #777;
+              font-weight: bold;
+            }
+            .price {
+              text-indent: 20px;
+              font-family: $open-sans;
+              font-size: 12px;
+              color: #646464;
+            }
+            .cost {
+              font-weight: bold;
+            }
+          }
+          td.item-container {
+            .item {
+              font-size: 14px;
+              line-height: 18px;
+              font-weight: 600;
+              color: #000;
+              margin-top: 2px;
+              margin-bottom: 4px;
+            }
+            .basic-price {
+              text-indent: 20px;
+              font-family: $open-sans;
+              font-size: 12px;
+              color: #777;
+              font-weight: bold;
+            }
+            .extra {
+              text-indent: 20px;
+              font-family: $open-sans;
+              font-size: 12px;
+              color: #646464;
+            }
+            .change-link {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .min-order-value {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 12px;
+      color: #e33f29;
+      margin: 0 11px 8px;
+      .fa {
+        margin-right: 5px;
+      }
+    }
+
+    .is-reached {
+      color: #adcf00;
+    }
+
+    table.total {
+      font-family: $open-sans;
+      font-size: 14px;
+      font-weight: 600;
+      tr {
+        td {
+          padding-bottom: 0;
+          &:first-child {
+            padding-left: 8px;
+          }
+        }
+      }
+      .discount {
+        background-color: #eb5635;
+        color: $template-text-discount;
+        .item-container .item {
+          color: $template-text-discount;
+        }
+      }
+      .total {
+        padding-top: 15px;
+      }
+    }
+  }
+  .button-container {
+    padding: 8px;
+    .btn {
+      font-family: $roboto;
+      font-size: 17px;
+      font-weight: bold;
+      font-stretch: condensed;
+      text-align: center;
+      color: $template-text-discount;
+      &.disabled {
+        background-color: $silver;
+        border-color: $silver;
+        &:hover {
+          background-color: $silver;
+          border-color: $silver;
+        }
+      }
+    }
+  }
+  .minOrder {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: #e33f29;
+    margin: 16px auto 8px;
+  }
+  .bottom-text {
+    font-family: $roboto;
+    font-size: 12px;
+    text-align: center;
+    color: #6e777f;
+    line-height: 36px;
+  }
+  .paysystem-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 35px;
+    img {
+      mix-blend-mode: luminosity;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
+  .min-order-value {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: #e33f29;
+    margin: 0 11px 8px;
+    .fa {
+      margin-right: 5px;
+    }
+  }
+  .is-reached {
+    color: #adcf00;
+  }
+}

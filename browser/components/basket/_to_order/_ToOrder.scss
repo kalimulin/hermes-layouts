@@ -1,0 +1,30 @@
+@import "../../../styles/variables";
+
+#to-order-component {
+  .bottom-text {
+    font-family: $roboto;
+    font-size: 12px;
+    text-align: center;
+    color: #6e777f;
+    line-height: 36px;
+  }
+  .button-container {
+    padding: 8px;
+    .btn {
+      font-family: $roboto;
+      font-size: 17px;
+      font-weight: bold;
+      font-stretch: condensed;
+      text-align: center;
+      color: $template-text-discount;
+      &.disabled {
+        background-color: $silver;
+        border-color: $silver;
+        &:hover {
+          background-color: $silver;
+          border-color: $silver;
+        }
+      }
+    }
+  }
+}

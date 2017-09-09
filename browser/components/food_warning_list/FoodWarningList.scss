@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+#food-warning-list {
+  margin-top: 29px;
+  margin-bottom: 24px;
+  background-color: $silver;
+  padding: 10px;
+  font-family: $open-sans;
+  font-size: 9px;
+  font-weight: 300;
+  color: $template-text-main;
+  position: relative;
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  ol {
+    padding-left: 15px;
+    margin-bottom: 0;
+    li {
+      padding-left: 15px;
+    }
+  }
+  .detail-list {
+    font-weight: normal;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}

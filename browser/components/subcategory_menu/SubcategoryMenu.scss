@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+#subcategory-menu-component {
+  height: 34px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 29px;
+      a {
+        font-family: $roboto;
+        font-size: 14px;
+        font-stretch: condensed;
+        color: $template-text-main;
+        font-weight: bold;
+        line-height: 34px;
+        &:hover,
+        &:active,
+        &.active {
+          color: $light-green;
+        }
+      }
+    }
+  }
+}
+

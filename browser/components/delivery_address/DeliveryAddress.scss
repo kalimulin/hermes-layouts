@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+#address-form-component {
+  #time-form-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: bold;
+    margin-top: 20px;
+    .time-name {
+      text-align: center;
+      margin-right: 5px;
+    }
+    .delivery-time {
+      text-align: center;
+      width: 119px;
+      margin: 0;
+    }
+    .time-select {
+      -webkit-appearance: none;
+    }
+  }
+  hr {
+    border-color: $template-text-main;
+    margin-right: 5px;
+    margin-bottom: 22px;
+    margin-left: 10px;
+  }
+  .fa {
+    margin-right: 10px;
+  }
+  .heading {
+    background-color: #595968;
+    color: $template-text-discount;
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    padding: 11px;
+  }
+  .help-block {
+    padding-left: 12px;
+    font-family: $open-sans;
+    font-size: 12px;
+    font-weight: 600;
+    color: #df241f;
+  }
+  .order-form {
+    padding: 8px;
+    form {
+      input[type=text] {
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: 600;
+        color: $template-text-main;
+      }
+    }
+  }
+  .btn {
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-align: center;
+    color: $template-text-discount;
+  }
+  .light-grey-btn {
+    color: #818a91;
+  }
+}

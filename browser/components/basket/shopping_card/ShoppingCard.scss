@@ -1,0 +1,123 @@
+@import "../../../styles/variables";
+
+#shopping-card {
+  padding-top: 10px;
+  .shopping-list {
+    //max-height: 200px;
+    //overflow-y: scroll;
+  }
+  table {
+    margin-top: 1px;
+    margin-bottom: 0;
+    tbody {
+      tr {
+        td {
+          border-top: 0;
+          padding-top: 0;
+          &:first-child {
+            padding-left: 11px;
+          }
+          &:last-child {
+            padding-right: 11px;
+          }
+        }
+        td.item-cost {
+          text-align: right;
+          white-space: nowrap;
+          .count {
+            font-size: 18px;
+            color: #646464;
+            font-weight: bold;
+            .fa {
+              cursor: pointer;
+            }
+            .fa-minus-circle {
+              margin: 0 10px 0 0;
+            }
+            .fa-plus-circle {
+              margin: 0 0 0 10px;
+            }
+          }
+          .basic-price {
+            text-indent: 20px;
+            font-family: $open-sans;
+            font-size: 12px;
+            color: #777;
+            font-weight: bold;
+          }
+          .price {
+            text-indent: 20px;
+            font-family: $open-sans;
+            font-size: 12px;
+            color: #646464;
+          }
+          .cost {
+            font-weight: bold;
+          }
+        }
+        td.item-container {
+          .item {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 2px;
+            margin-bottom: 4px;
+          }
+          .basic-price {
+            text-indent: 20px;
+            font-family: $open-sans;
+            font-size: 12px;
+            color: #777;
+            font-weight: bold;
+          }
+          .change-button {
+            text-decoration: underline;
+            text-indent: 20px;
+            font-family: $open-sans;
+            font-size: 12px;
+            color: #777;
+            font-weight: bold;
+          }
+          .extra {
+            text-indent: 20px;
+            font-family: $open-sans;
+            font-size: 12px;
+            color: #646464;
+          }
+          .change-link {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  table.total {
+    font-family: $open-sans;
+    font-size: 14px;
+    font-weight: 600;
+    tr {
+      td {
+        padding-bottom: 0;
+        &:first-child {
+          padding-left: 8px;
+        }
+      }
+    }
+    .discount {
+      background-color: #eb5635;
+      color: $template-text-discount;
+      .item-container .item {
+        color: $template-text-discount;
+      }
+      .fa-certificate {
+        margin-right: 5px;
+      }
+    }
+    .total {
+      padding-top: 15px;
+    }
+  }
+}

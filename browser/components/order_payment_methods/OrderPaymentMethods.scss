@@ -1,0 +1,230 @@
+@import "../../styles/variables";
+
+#order-payment-methods {
+  hr {
+    border-top: solid 1px $template-text-main;
+    border-bottom: 0;
+    margin: 7px;
+  }
+  table {
+    margin-top: 1px;
+    margin-bottom: 0;
+    tbody {
+      tr {
+        td {
+          border-top: 0;
+          padding-top: 0;
+          &:first-child {
+            padding-left: 11px;
+          }
+          &:last-child {
+            padding-right: 11px;
+          }
+        }
+        td.item-container {
+          .item {
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+          }
+          .basic-price {
+            font-family: $open-sans;
+            font-size: 14px;
+            color: #777;
+          }
+          .extra {
+            text-indent: 20px;
+            font-family: $open-sans;
+            font-size: 12px;
+            color: #646464;
+          }
+        }
+        .item-cost {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  table.total {
+    font-family: $open-sans;
+    font-size: 14px;
+    tr {
+      td {
+        padding-bottom: 0;
+        &:first-child {
+          padding-left: 8px;
+        }
+      }
+    }
+    .discount {
+      color: $template-text-main;
+      .item-container .item {
+        color: $template-text-main;
+      }
+      .fa-certificate {
+        margin-right: 5px;
+      }
+    }
+    .total {
+      font-weight: bold;
+    }
+  }
+  .heading {
+    background-color: #595968;
+    color: $template-text-discount;
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    padding: 11px;
+  }
+  .paymethod-title {
+    padding-left: 10px;
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: condensed;
+  }
+  .paymethods {
+    max-height: 320px;
+    //overflow-y: scroll;
+    padding: 0 8px;
+    .radio {
+      margin-top: 10px;
+      label {
+        position: relative;
+        display: block;
+        border: 1px solid $pinkish-grey;
+        border-radius: 4px;
+        padding-left: 36px;
+        line-height: 38px;
+        height: 38px;
+        background-color: $silver;
+        input[type=radio] {
+          height: 14px;
+          width: 14px;
+          top: 50%;
+          margin-top: -7px;
+          left: 0;
+          margin-left: 12px;
+        }
+      }
+      .paysystem {
+        background-color: $template-text-discount;
+        height: 36px;
+        border-radius: 0 4px 4px 0;
+        border-left: 1px solid $pinkish-grey;
+        padding-left: 21px;
+        font-family: $open-sans;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+        color: $warm-grey-two;
+        .paysystem-image {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  p.bottom-text {
+    font-family: $open-sans;
+    font-size: 12px;
+    color: #000;
+    padding: 0 10px;
+    span {
+      color: $light-green;
+    }
+  }
+  .btn {
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-align: center;
+    color: $template-text-discount;
+  }
+  .wrapper {
+    padding: 20px 25px;
+  }
+  .feedback-info {
+    .hr-wrapper {
+      margin-bottom: 15px;
+      padding: 0;
+      margin-top: 15px;
+      hr {
+        border: solid 1px #777;
+        margin: 0;
+      }
+    }
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .block {
+      padding: 0;
+      margin-bottom: 15px;
+      .text {
+        text-align: left;
+        color: black;
+        margin: 0;
+      }
+    }
+  }
+  &.order-in-process {
+    .question-text {
+      font-family: $roboto;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: condensed;
+      color: #595968;
+    }
+    .chef {
+      width: 108px;
+      height: 108px;
+    }
+  }
+  &.order-success {
+    .question-text {
+      font-family: $roboto;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: condensed;
+      color: #595968;
+    }
+    .feedback-info {
+      margin-top: 40px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: condensed;
+      text-align: center;
+      color: green;
+    }
+    .description {
+      text-align: center;
+    }
+  }
+  &.order-error {
+    .feedback-info {
+      margin-top: 40px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: condensed;
+      text-align: center;
+      color: red;
+    }
+    .description {
+      text-align: center;
+    }
+  }
+  .light-grey-btn {
+    color: #818a91;
+  }
+}

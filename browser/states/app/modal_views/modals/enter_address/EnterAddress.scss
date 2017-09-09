@@ -1,0 +1,27 @@
+@import "../../../../../styles/variables";
+
+#enter-address-modal-state {
+  .modal-header {
+    font-family: $roboto;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: condensed;
+    border-bottom: 0;
+    .img-house {
+      margin-right: 20px;
+    }
+  }
+  .btn-container {
+    display: block;
+    text-align: center;
+    .btn {
+      margin: 7px;
+      font-family: $roboto;
+      font-size: 12px;
+      font-stretch: condensed;
+      text-align: center;
+      width: 177px;
+      padding: 8px;
+    }
+  }
+}

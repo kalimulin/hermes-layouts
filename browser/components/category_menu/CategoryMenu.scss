@@ -1,0 +1,146 @@
+@import "../../styles/variables";
+
+#category-menu-component {
+  padding-left: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  .global-navigation {
+    display: flex;
+    align-items: center;
+    .logo-container {
+      .logo {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .menu-wrapper {
+      padding-right: 10px;
+      .menu-container {
+        margin-left: -15px;
+        padding-left: 15px;
+        .category-navigation {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          //overflow-y: auto;
+          .category {
+            flex-basis: 33%;
+            list-style: none;
+            height: 24px;
+            padding-left: 5px;
+            overflow-y: hidden;
+            padding-top: 3px;
+            &.odd {
+              background-color: #e6e6e6;
+            }
+            &.active {
+              color: $light-green;
+              .name {
+                color: inherit;
+              }
+            }
+            .name {
+              margin-left: 5px;
+              transition: 400ms;
+              font-size: 14px;
+              font-weight: bold;
+              color: $template-text-main;
+              &:hover,
+              &:focus {
+                text-decoration: none;
+                color: $light-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #mobile-store-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    #store-name {
+      display: none;
+    }
+    .delivery-info-component {
+      margin: 15px 0;
+      width: 195px;
+      p {
+        font-family: $roboto;
+        font-weight: normal;
+      }
+    }
+    .opening-hours-component {
+      //width: 326px;
+      margin: 15px 0;
+      font-size: 12px;
+      height: auto;
+    }
+  }
+  #discount {
+    margin-left: -10px;
+    padding: 5px 0 5px 30px;
+    background-color: #eb5635;
+    color: $template-text-discount;
+    font-family: $open-sans;
+    font-weight: bold;
+    .item-container .item {
+      color: $template-text-discount;
+    }
+    .fa {
+      margin-right: 3px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #category-menu-component {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 764px) {
+  #mobile-store-info {
+    .delivery-info-component {
+      margin: 10px 0 !important;
+      p {
+        font-size: 10px;
+      }
+    }
+    .opening-hours-component {
+      margin: 10px 10px 10px 0 !important;
+      font-size: 9px !important;
+    }
+  }
+
+  .delivery-info-text {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  #mobile-store-info {
+    padding-left: 0;
+    .delivery-info-component {
+      margin: 5px 0 !important;
+      width: 96px !important;
+
+      p {
+        font-size: 9px;
+      }
+    }
+    .opening-hours-component {
+      margin: 5px 5px 5px 0 !important;
+      font-size: 9px !important;
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .global-navigation {
+    display: none;
+  }
+}

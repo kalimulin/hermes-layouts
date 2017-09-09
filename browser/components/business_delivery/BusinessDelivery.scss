@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+#business-delivery-component {
+  #business-delivery {
+    padding: 11px;
+    .row {
+      .col-xs-4 {
+        padding-right: 5px;
+      }
+      .col-xs-8 {
+        padding-left: 5px;
+      }
+    }
+    h2 {
+      font-family: $open-sans;
+      font-size: 14px;
+      font-weight: bold;
+      color: $steel;
+    }
+    button {
+      font-family: $roboto;
+      font-size: 17px;
+      text-align: center;
+      color: $template-text-discount;
+      .fa {
+        margin-right: 5px;
+      }
+    }
+    p {
+      font-family: $roboto;
+      font-size: 12px;
+      text-align: center;
+      color: $steel;
+    }
+    .not-have-code {
+      margin-top: 15px;
+    }
+    .bottom-text {
+      font-family: $roboto;
+      font-size: 12px;
+      text-align: center;
+      color: #6e777f;
+      line-height: 36px;
+    }
+  }
+}
+
